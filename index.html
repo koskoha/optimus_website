@@ -1,18 +1,329 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Optimus movers</title>
-    <link rel="stylesheet" href="./css/materialize.min.css" />
-    <link rel="stylesheet" href="./css/styles.min.css" />
-  </head>
-  <body>
-    <div class="wraper">
-      <div class="header">header</div>
-      <div class="slider">slider</div>
-      <div class="content">content</div>
-      <div class="footer">footer</div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Optimus movers</title>
+  <link rel="stylesheet" href="./css/materialize.min.css" />
+  <link rel="stylesheet" href="./css/styles.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- ********************HEADER ***************************** -->
+    <header class="shell">
+      <div class="animated_logo">
+        <div class="logo">
+          <img src="./images/logo.png" alt="logo">
+        </div>
+      </div>
+      <div class="header_info ">
+        <div class="contact animated slideInRight">
+          <div class="header_contact">
+            <i class="material-icons">mail_outline</i> info@demolink.org</div>
+          <div class="header_contact">
+            <i class="material-icons">access_time</i> Mon–Sat: 7:00–19:00 </div>
+          <div class="header_contact">
+            <i class="material-icons">local_phone</i> 111-222-3333</div>
+        </div>
+        <div class="menu animated slideInRight">
+          <a class="nav_link">Our Services</a>
+          <a class="nav_link">Guaranties</a>
+          <a class="nav_link">Need To Know</a>
+          <a class="nav_link">Free Quote</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ********************SLIDER ***************************** -->
+    <div class="slider">
+      <div class="carousel carousel-slider center styles=" height: 500px; " carousel_height">
+        <div class="carousel-fixed-item center">
+          <a class="btn_quote">FREE QUOTE</a>
+        </div>
+        <div class="carousel-item carousel_img white-text" href="#one!">
+          <h3>First Panel</h3>
+          <span>This is your first panel</span>
+        </div>
+        <div class="carousel-item carousel_img white-text" href="#two!">
+          <h3>Second Panel</h3>
+          <p>This is your second panel</p>
+        </div>
+        <div class="carousel-item carousel_img white-text" href="#three!">
+          <h3>Third Panel</h3>
+          <p>This is your third panel</p>
+        </div>
+      </div>
     </div>
-  </body>
+
+    <!-- ********************CONTENT ***************************** -->
+    <div class="content">
+
+      <!-- ********************CONTENT ==> OUR SERVICES ***************************** -->
+      <div class="our_services shell">
+        <div class="title animated slideInDown">Our Services</div>
+        <hr>
+        <p class="service_desc animated slideInDown">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illum provident sit atque ipsam ullam et mollitia esse
+          ipsum numquam! Corrupti eaque dolor quo blanditiis quibusdam! Consequatur exercitationem quidem provident.</p>
+        <div class="services_list">
+          <div class="services_list_item animated slideInLeft">
+            <div class="service_name">
+              <div>
+                <i class="material-icons service_icon hide">check</i>
+                Long/Local Move
+              </div>
+            </div>
+          </div>
+          <div class="services_list_item animated slideInRight">
+            <div class="service_name">
+              <div>
+                <i class="material-icons service_icon hide">check</i>
+                Box Delivery
+              </div>
+            </div>
+          </div>
+          <div class="services_list_item animated slideInLeft">
+            <div class="service_name">
+              <div>
+                <i class="material-icons service_icon hide">check</i>
+                Commercial/Office
+              </div>
+            </div>
+          </div>
+          <div class="services_list_item animated slideInRight">
+            <div class="service_name">
+              <div>
+                <i class="material-icons service_icon hide">check</i>
+                Loading/Unloading
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ********************CONTENT ==> CHOOSE US ***************************** -->
+      <div class="choose_us">
+        <div class="skew_box one"></div>
+        <div class="shell">
+          <div class="title white-text">
+            Why To Choose Us
+          </div>
+          <hr>
+          <div class="choose_us_list">
+            <div class="guarantee_item">
+              <div>
+                <img src="./images/choose/thumb.png" alt="" />
+              </div>
+              <div>
+                <p class="guarantee_title">Best Service</p>
+                <p class="guarantee_desc">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla iure dolor nobis impedit sapiente! Repudiandae, soluta sapiente.
+                  Doloribus voluptatibus
+                </p>
+              </div>
+            </div>
+            <div class="guarantee_item">
+              <div>
+                <img src="./images/choose/group.png" alt="" />
+              </div>
+              <div>
+                <p class="guarantee_title">Reputation</p>
+                <p class="guarantee_desc">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio tenetur molestias placeat similique illo quaerat?
+                </p>
+              </div>
+            </div>
+            <div class="guarantee_item">
+              <div>
+                <img src="./images/choose/lock.png" alt="" />
+              </div>
+              <div>
+                <p class="guarantee_title">Safety & Security</p>
+                <p class="guarantee_desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas omnis iure vitae porro voluptatibus. Odit in natus, quo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skew_box two"></div>
+      </div>
+
+      <!-- ********************CONTENT ==> QUOTE ***************************** -->
+      <div class="shell">
+        <div class="quote">
+          <div class="title">REQUEST FREE QUOTE</div>
+          <hr>
+          <div class="quote_form">
+            <form class="col s12" id="estimate_form" role="form" data-toggle="validator">
+              <div class="form_section">Client info:</div>
+              <div class="row">
+                <div class="input-field col s3">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="name" type="text" class="validate" required />
+                  <label for="name">Full Name</label>
+                </div>
+                <div class="input-field col s3">
+                  <i class="material-icons prefix">phone</i>
+                  <input id="phone" type="text" class="validate" required />
+                  <label for="phone">Phone</label>
+                </div>
+                <div class="input-field col s3">
+                  <i class="material-icons prefix">email</i>
+                  <input id="email" type="email" class="validate" />
+                  <label for="email">Email</label>
+                </div>
+                <div class="input-field col s3">
+                  <i class="material-icons prefix">event_available</i>
+                  <input id="move_date" type="text" class="datepicker" required />
+                  <label for="move_date">Move Date</label>
+                </div>
+              </div>
+              <div class="form_section">Pick Up:</div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">home</i>
+                  <select class="browser-default">
+                    <option value="" disabled selected>Move Size:</option>
+                    <option value="piece">Piece Delivery </option>
+                    <option value="loading/unloading">Loading / Unloading
+                    </option>
+                    <option value="studio">Studio</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="townhouse">Townhouse</option>
+                    <option value="house">House</option>
+                    <option value="storage">Storage</option>
+                    <option value="office">Office</option>
+                  </select>
+                  <!-- <label for="move_size">Move Size:</label> -->
+                </div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">local_hotel</i>
+                  <input id="bedrooms" type="text" class="validate" />
+                  <label for="bedrooms">How Many Bedrooms</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">room</i>
+                  <input id="address_from" type="text" class="validate" />
+                  <label for="address_from">Address</label>
+                </div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">location_city</i>
+                  <input id="city_from" type="text" class="validate" />
+                  <label for="city_from">City</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">map</i>
+                  <input id="state_from" type="text" class="validate" />
+                  <label for="state_from">State</label>
+                </div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">room</i>
+                  <input id="zip_from" type="text" class="validate" required />
+                  <label for="zip_from">Zip</label>
+                </div>
+              </div>
+              <div class="form_section">Delivery:</div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">room</i>
+                  <input id="address_to" type="text" class="validate" />
+                  <label for="address_to">Address</label>
+                </div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">location_city</i>
+                  <input id="city_to" type="text" class="validate" />
+                  <label for="city_to">City</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">map</i>
+                  <input id="state_to" type="text" class="validate" />
+                  <label for="state_to">State</label>
+                </div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">room</i>
+                  <input id="zip_to" type="text" class="validate" required />
+                  <label for="zip_to">Zip</label>
+                </div>
+              </div>
+              <div class="form_section">Additional Comments:</div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">comment</i>
+                  <textarea id="comment" class="materialize-textarea"></textarea>
+                  <label for="comment">Items List / Comments (optional)</label>
+                </div>
+              </div>
+              <div style="display:grid; justify-content: center;">
+                <button class="submit_btn" type="submit" id="form-submit">
+                  SUBMIT
+                </button>
+              </div>
+              <div id="msgSubmit" class="h3 text-center hidden"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="skew_box one"></div>
+        <div class="footer_content">
+          <div>
+            <img src="images/logo.png" />
+            <!-- <p class="footer_section">GO FAST MOVERS</p> -->
+          </div>
+          <div>
+            <span class="footer_section"> WE ACCEPT </span>
+            <p class="footer_line">
+              <img src="./images/pay.png" alt="" />
+            </p>
+          </div>
+          <div>
+            <span class="footer_section"> STAY CONNECTED </span>
+            <p class="footer_line">
+              <a href="google.com">
+                <img src="./images/sosial/google.png" alt="" />
+              </a>
+              <a href="google.com">
+                <img src="./images/sosial/yelp.png" alt="" />
+              </a>
+              <a href="google.com">
+                <img src="./images/sosial/angel.png" alt="" />
+              </a>
+            </p>
+          </div>
+          <div>
+            <span class="footer_section"> GET IN TOUCH </span>
+            <p class="footer_line">
+              <i class="material-icons">local_phone</i> 111-222-3333
+            </p>
+            <p>
+              <i class="material-icons">local_post_office</i>
+              info@optimusmovers.com
+            </p>
+          </div>
+          <div class="copyright">Copyright © 2018 All rights reserved.</div>
+        </div>
+        <div class="skew_box two"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./js/materialize.min.js "></script>
+  <script src="./js/init.js "></script>
+</body>
+
 </html>

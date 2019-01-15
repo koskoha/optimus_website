@@ -31,10 +31,9 @@
             <i class="material-icons">local_phone</i> 111-222-3333</div>
         </div>
         <div class="menu animated slideInRight">
-          <a class="nav_link">Our Services</a>
-          <a class="nav_link">Guaranties</a>
-          <a class="nav_link">Need To Know</a>
-          <a class="nav_link">Free Quote</a>
+          <a href="index.html#services" class="nav_link">Our Services</a>
+          <a href="index.html#choose" class="nav_link">Why To Choose Us</a>
+          <a href="index.html#free_quote"  class="quote_link">Free Quote</a>
         </div>
       </div>
     </header>
@@ -43,7 +42,7 @@
     <div class="slider">
       <div class="carousel carousel-slider center styles=" height: 500px; " carousel_height">
         <div class="carousel-fixed-item center">
-          <a class="btn_quote">FREE QUOTE</a>
+          <a href="index.html#free_quote" class="btn_quote">FREE QUOTE</a>
         </div>
         <div class="carousel-item carousel_img white-text" href="#one!">
           <h3>First Panel</h3>
@@ -64,7 +63,7 @@
     <div class="content">
 
       <!-- ********************CONTENT ==> OUR SERVICES ***************************** -->
-      <div class="our_services shell">
+      <div class="our_services shell" id="services">
         <div class="title animated slideInDown">Our Services</div>
         <hr>
         <p class="service_desc animated slideInDown">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illum provident sit atque ipsam ullam et mollitia esse
@@ -106,7 +105,7 @@
       </div>
 
       <!-- ********************CONTENT ==> CHOOSE US ***************************** -->
-      <div class="choose_us">
+      <div class="choose_us" id="choose">
         <div class="skew_box one"></div>
         <div class="shell">
           <div class="title white-text">
@@ -154,7 +153,7 @@
       </div>
 
       <!-- ********************CONTENT ==> QUOTE ***************************** -->
-      <div class="shell">
+      <div class="shell" id="free_quote">
         <div class="quote">
           <div class="title">REQUEST FREE QUOTE</div>
           <hr>
@@ -165,12 +164,12 @@
                 <div class="input-field col s3">
                   <i class="material-icons prefix">account_circle</i>
                   <input id="name" type="text" class="validate" required />
-                  <label for="name">Full Name</label>
+                  <label for="name">Full Name *</label>
                 </div>
                 <div class="input-field col s3">
                   <i class="material-icons prefix">phone</i>
                   <input id="phone" type="text" class="validate" required />
-                  <label for="phone">Phone</label>
+                  <label for="phone">Phone *</label>
                 </div>
                 <div class="input-field col s3">
                   <i class="material-icons prefix">email</i>
@@ -180,7 +179,7 @@
                 <div class="input-field col s3">
                   <i class="material-icons prefix">event_available</i>
                   <input id="move_date" type="text" class="datepicker" required />
-                  <label for="move_date">Move Date</label>
+                  <label for="move_date">Move Date *</label>
                 </div>
               </div>
               <div class="form_section">Pick Up:</div>
@@ -228,7 +227,7 @@
                 <div class="input-field col s6">
                   <i class="material-icons prefix">room</i>
                   <input id="zip_from" type="text" class="validate" required />
-                  <label for="zip_from">Zip</label>
+                  <label for="zip_from">Zip *</label>
                 </div>
               </div>
               <div class="form_section">Delivery:</div>
@@ -253,7 +252,7 @@
                 <div class="input-field col s6">
                   <i class="material-icons prefix">room</i>
                   <input id="zip_to" type="text" class="validate" required />
-                  <label for="zip_to">Zip</label>
+                  <label for="zip_to">Zip *</label>
                 </div>
               </div>
               <div class="form_section">Additional Comments:</div>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Asap|Open+Sans|Abril+Fatface|Racing+Sans+One|Ultra');
 
-@import "_cust_variables";
+@import '_cust_variables';
 
 @mixin sys_font(
   $weight: 700,
@@ -64,14 +64,14 @@
         transform: skewX(45deg);
       }
     }
-    
+
     .header_info {
       display: grid;
       grid-column: span 2;
       grid-template-rows: 1fr auto;
       transform: skewX(-45deg);
       transform-origin: top right;
-      
+
       .contact {
         padding-left: 30px;
         background: white;
@@ -80,14 +80,13 @@
         justify-content: center;
         align-content: center;
         grid-gap: 30px;
-        
-        
+
         .header_contact {
           transform: skewX(45deg);
-          i{
+          i {
             color: $light_blue;
             position: relative;
-            top:6px;
+            top: 6px;
           }
         }
       }
@@ -100,7 +99,7 @@
         color: white;
         padding-left: 30px;
         margin-right: -1000%;
-        
+        .quote_link,
         .nav_link {
           transform: skewX(45deg);
           font-family: 'Open Sans', sans-serif;
@@ -114,47 +113,46 @@
             border-bottom: 2px solid $light_blue;
           }
         }
+        .quote_link {
+          border: 2px solid $light_blue;
+          background-color: $light_blue;
+        }
       }
     }
   }
 
   .slider {
-
-    h3{
+    h3 {
       padding-top: 10vh;
       padding-bottom: 5vh;
-      @include sys_font(800 ,54px ,white ,0 ,0 );
+      @include sys_font(800, 54px, white, 0, 0);
     }
-    span{
-      @include sys_font(800, 15px ,white ,0 ,0 );
+    span {
+      @include sys_font(800, 15px, white, 0, 0);
     }
 
     .btn_quote {
-      @include btn($light_blue, $light_blue_darken );
+      @include btn($light_blue, $light_blue_darken);
     }
     .carousel_img:nth-child(2) {
-      @include background_img("../images/slider/slider1.jpg")
-      
+      @include background_img('../images/slider/slider1.jpg');
     }
     .carousel_img:nth-child(3) {
-      @include background_img("../images/slider/slider2.jpg")
-      
+      @include background_img('../images/slider/slider2.jpg');
     }
     .carousel_img:nth-child(4) {
-      @include background_img("../images/slider/slider3.jpg")
-      
+      @include background_img('../images/slider/slider3.jpg');
     }
   }
 
   .content {
-
     // ***************** OUR SERVICES *****************************
     .our_services {
       padding-top: 30px;
       padding-bottom: 100px;
       .service_desc {
         padding-bottom: 20px;
-        @include sys_font(300 ,14px , black ,1.5 ,0.02em )
+        @include sys_font(300, 14px, black, 1.5, 0.02em);
       }
       .services_list {
         display: grid;
@@ -179,25 +177,25 @@
               font-weight: 600;
               .service_icon {
                 position: relative;
-                top:4px;
+                top: 4px;
                 font-weight: 900;
                 font-size: 18px;
               }
             }
           }
         }
-        
+
         .services_list_item:nth-child(1) {
-          @include background_img("../images/services/service1.jpg");
+          @include background_img('../images/services/service1.jpg');
         }
         .services_list_item:nth-child(2) {
-          @include background_img("../images/services/service2.jpg");
+          @include background_img('../images/services/service2.jpg');
         }
         .services_list_item:nth-child(3) {
-          @include background_img("../images/services/service3.jpg");
+          @include background_img('../images/services/service3.jpg');
         }
         .services_list_item:nth-child(4) {
-          @include background_img("../images/services/service1.jpg");
+          @include background_img('../images/services/service1.jpg');
         }
       }
     }
@@ -211,7 +209,7 @@
       .choose_us_list {
         margin-top: 35px;
         color: white;
-        display:grid; 
+        display: grid;
         grid-gap: 25px;
         grid-template-columns: repeat(3, 1fr);
         .guarantee_item {
@@ -229,16 +227,18 @@
             margin-top: 8px;
           }
         }
-
       }
     }
 
     // ****************** Quote Form ***************************
     .quote_form {
       margin-top: 40px;
-      form{
+      form {
         margin-top: 60px;
         margin-bottom: 60px;
+        padding: 20px;
+        border: 2px solid $light_blue;
+        border-radius: 20px;
         i {
           color: $light_blue;
         }
@@ -248,12 +248,23 @@
           font-size: 15px;
           color: grey;
         }
+        .msgSubmitSuccess {
+          @include sys_font(700, 16px, #16be45, 1.1, 0px);
+          border: 1px solid #16be45;
+          text-align: center;
+          padding: 15px;
+          margin: 15px;
+        }
+        .msgSubmitFail {
+          color: red;
+          border: 1px solid red;
+        }
         .form_section {
           text-align: center;
           @include sys_font(600, 20px, $blue, 1.1, 1px);
         }
         .submit_btn {
-          @include btn($light_blue, $blue );
+          @include btn($light_blue, $blue);
           padding: 10px 35px;
         }
       }
@@ -296,15 +307,14 @@
       }
     }
   }
-
 }
 
-.title{
-  @include sys_font(700 ,36px , black ,1.3 ,0.04em );
-  padding-top:30px;
+.title {
+  @include sys_font(700, 36px, black, 1.3, 0.04em);
+  padding-top: 30px;
   padding-bottom: 20px;
 }
-.shell{
+.shell {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -320,13 +330,13 @@ hr {
 }
 
 .skew_box {
-  position:absolute;
+  position: absolute;
   background-color: #fff;
   width: 600px;
   height: 25px;
   transform: skewX(-35deg);
 }
-.one{
+.one {
   top: 0;
   margin-left: -10px;
 }
@@ -334,4 +344,4 @@ hr {
   bottom: 0;
   right: 0;
   margin-right: -10px;
-} 
+}

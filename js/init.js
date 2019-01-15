@@ -69,7 +69,7 @@
         const comments = $('#comment').val();
         $.ajax({
             type: "POST",
-            url: "https://script.google.com/macros/s/AKfycbzFIROjuJpK9lb0Wi0phjzAnYxgQxjGHlhwYkL61arZcFXQLtZs/exec",
+            url: "https://script.google.com/macros/s/AKfycbykn4sa8rvVhqW-V75fiGqR_kq2tZWVE8RUCgg9DqV-Yq164-Q/exec",
             data: "name=" + name + "&phone=" + phone+ "&email=" + email+ "&move_date=" + moveDate+ "&move_size=" + moveSize+ "&bedrooms=" + bedrooms+ "&address_from=" + addressFrom+ "&city_from=" + cityFrom+ "&state_from=" + stateFrom+ "&zip_from=" + zipFrom+ "&address_to=" + addressTo+ "&city_to=" + cityTo+ "&state_to=" + stateTo+ "&zip_to=" + zipTo + "&comments=" + comments,
             success: function(resp) {
                 console.log(resp);

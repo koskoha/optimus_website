@@ -13,6 +13,12 @@
     }, 5000)
   });
 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, {});
+  });
+
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.datepicker');
     // var contact_us = document.querySelectorAll('.contact_us');

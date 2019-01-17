@@ -13,13 +13,21 @@
 
 <body>
   <div class="wrapper">
+      <div class="hide-on-med-and-up show-on-medium-and-down" >
+        <a href="#" data-target="mobile-menu-slider" class="sidenav-trigger" id="mobile_menu">
+          <i class="material-icons" id="mob_menu_icon">menu</i>
+        </a>
+        <ul class="sidenav" id="mobile-menu-slider">
+          <li><a class="sidenav-close" href="index.html#services">Our Services</a></li>
+          <li><a class="sidenav-close" href="index.html#choose" class="nav_link">Why Choose Us</a></li>
+          <li><a class="sidenav-close" href="index.html#free_quote">Free Quote</a></li>
+        </ul>
+      </div>
 
     <!-- ********************HEADER ***************************** -->
-    <header class="shell">
-      <div class="animated_logo">
-        <div class="logo">
-          <img src="./images/logo.png" alt="logo">
-        </div>
+    <header class="">
+      <div class="logo">
+        <img src="./images/logo.png" alt="logo">
       </div>
       <div class="header_info ">
         <div class="contact animated slideInRight">
@@ -30,13 +38,15 @@
           <div class="header_contact">
             <i class="material-icons">local_phone</i> 111-222-3333</div>
         </div>
-        <div class="menu animated slideInRight">
+        <div class="menu animated slideInRight hide-on-med-and-down">
           <a href="index.html#services" class="nav_link">Our Services</a>
-          <a href="index.html#choose" class="nav_link">Why To Choose Us</a>
+          <a href="index.html#choose" class="nav_link">Why Choose Us</a>
           <a href="index.html#free_quote" class="quote_link">Free Quote</a>
         </div>
+        
       </div>
     </header>
+    
 
     <!-- ********************SLIDER ***************************** -->
     <div class="slider">
@@ -109,7 +119,7 @@
         <div class="skew_box one"></div>
         <div class="shell">
           <div class="title white-text">
-            Why To Choose Us
+            Why Choose Us
           </div>
           <hr>
           <div class="choose_us_list">
@@ -158,118 +168,120 @@
           <div class="title">REQUEST FREE QUOTE</div>
           <hr>
           <div class="quote_form">
-            <form class="col s12" id="estimate_form" role="form" data-toggle="validator">
-              <div class="form_section">Client info:</div>
-              <div class="row">
-                <div class="input-field col s3">
-                  <i class="material-icons prefix">account_circle</i>
-                  <input id="name" type="text" class="validate" required />
-                  <label for="name">Full Name *</label>
+            <div class="row">
+              <form class="col s12" id="estimate_form" role="form" data-toggle="validator">
+                <div class="form_section">Client info:</div>
+                <div class="row">
+                  <div class="input-field col s12 m3">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="name" type="text" class="validate" required />
+                    <label for="name">Full Name *</label>
+                  </div>
+                  <div class="input-field col s12 m3">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="phone" type="text" class="validate" required />
+                    <label for="phone">Phone *</label>
+                  </div>
+                  <div class="input-field col s12 m3">
+                    <i class="material-icons prefix">email</i>
+                    <input id="email" type="email" class="validate" />
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="input-field col s12 m3">
+                    <i class="material-icons prefix">event_available</i>
+                    <input id="move_date" type="text" class="datepicker" required />
+                    <label for="move_date">Move Date *</label>
+                  </div>
                 </div>
-                <div class="input-field col s3">
-                  <i class="material-icons prefix">phone</i>
-                  <input id="phone" type="text" class="validate" required />
-                  <label for="phone">Phone *</label>
+                <div class="form_section">Pick Up:</div>
+                <div class="row">
+                  <div class="input-field col s12 m6">
+                    <i class="material-icons prefix">home</i>
+                    <select class="browser-default" id="form_select">
+                      <option value="" disabled selected>Move Size:</option>
+                      <option value="piece">Piece Delivery </option>
+                      <option value="loading/unloading">Loading / Unloading
+                      </option>
+                      <option value="studio">Studio</option>
+                      <option value="apartment">Apartment</option>
+                      <option value="townhouse">Townhouse</option>
+                      <option value="house">House</option>
+                      <option value="storage">Storage</option>
+                      <option value="office">Office</option>
+                    </select>
+                  </div>
+                  <div class="input-field col s12 m6">
+                    <i class="material-icons prefix">local_hotel</i>
+                    <input id="bedrooms" type="text" class="validate" />
+                    <label for="bedrooms">How Many Bedrooms</label>
+                  </div>
                 </div>
-                <div class="input-field col s3">
-                  <i class="material-icons prefix">email</i>
-                  <input id="email" type="email" class="validate" />
-                  <label for="email">Email</label>
-                </div>
-                <div class="input-field col s3">
-                  <i class="material-icons prefix">event_available</i>
-                  <input id="move_date" type="text" class="datepicker" required />
-                  <label for="move_date">Move Date *</label>
-                </div>
-              </div>
-              <div class="form_section">Pick Up:</div>
-              <div class="row">
-                <div class="input-field col s6">
-                  <i class="material-icons prefix">home</i>
-                  <select class="browser-default" id="form_select">
-                    <option value="" disabled selected>Move Size:</option>
-                    <option value="piece">Piece Delivery </option>
-                    <option value="loading/unloading">Loading / Unloading
-                    </option>
-                    <option value="studio">Studio</option>
-                    <option value="apartment">Apartment</option>
-                    <option value="townhouse">Townhouse</option>
-                    <option value="house">House</option>
-                    <option value="storage">Storage</option>
-                    <option value="office">Office</option>
-                  </select>
-                  <!-- <label for="move_size">Move Size:</label> -->
-                </div>
-                <div class="input-field col s6">
-                  <i class="material-icons prefix">local_hotel</i>
-                  <input id="bedrooms" type="text" class="validate" />
-                  <label for="bedrooms">How Many Bedrooms</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s6">
-                  <i class="material-icons prefix">room</i>
-                  <input id="address_from" type="text" class="validate" />
-                  <label for="address_from">Address</label>
-                </div>
-                <div class="input-field col s6">
-                  <i class="material-icons prefix">location_city</i>
-                  <input id="city_from" type="text" class="validate" />
-                  <label for="city_from">City</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s6">
-                  <i class="material-icons prefix">map</i>
-                  <input id="state_from" type="text" class="validate" />
-                  <label for="state_from">State</label>
-                </div>
-                <div class="input-field col s6">
-                  <i class="material-icons prefix">room</i>
-                  <input id="zip_from" type="text" class="validate" required />
-                  <label for="zip_from">Zip *</label>
-                </div>
-              </div>
-              <div class="form_section">Delivery:</div>
-              <div class="row">
-                <div class="input-field col s6">
-                  <i class="material-icons prefix">room</i>
-                  <input id="address_to" type="text" class="validate" />
-                  <label for="address_to">Address</label>
-                </div>
-                <div class="input-field col s6">
-                  <i class="material-icons prefix">location_city</i>
-                  <input id="city_to" type="text" class="validate" />
-                  <label for="city_to">City</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s6">
-                  <i class="material-icons prefix">map</i>
-                  <input id="state_to" type="text" class="validate" />
-                  <label for="state_to">State</label>
-                </div>
-                <div class="input-field col s6">
-                  <i class="material-icons prefix">room</i>
-                  <input id="zip_to" type="text" class="validate" required />
-                  <label for="zip_to">Zip *</label>
-                </div>
-              </div>
-              <div class="form_section">Additional Comments:</div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <i class="material-icons prefix">comment</i>
-                  <textarea id="comment" class="materialize-textarea"></textarea>
-                  <label for="comment">Items List / Comments (optional)</label>
-                </div>
-              </div>
-              <div style="display:grid; justify-content: center;">
-                <button class="submit_btn" type="submit" id="form-submit">
-                  SUBMIT
-                </button>
-              </div>
-              <div id="msgSubmit" class="h3 text-center hidden"></div>
-            </form>
+                  <div class="row">
+                    <div class="input-field col s12 m6">
+                      <i class="material-icons prefix">room</i>
+                      <input id="address_from" type="text" class="validate" />
+                      <label for="address_from">Address</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                      <i class="material-icons prefix">location_city</i>
+                      <input id="city_from" type="text" class="validate" />
+                      <label for="city_from">City</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12 m6">
+                      <i class="material-icons prefix">map</i>
+                      <input id="state_from" type="text" class="validate" />
+                      <label for="state_from">State</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                      <i class="material-icons prefix">room</i>
+                      <input id="zip_from" type="text" class="validate" required />
+                      <label for="zip_from">Zip *</label>
+                    </div>
+                  </div>
+                  <div class="form_section">Delivery:</div>
+                  <div class="row">
+                    <div class="input-field col s12 m6">
+                      <i class="material-icons prefix">room</i>
+                      <input id="address_to" type="text" class="validate" />
+                      <label for="address_to">Address</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                      <i class="material-icons prefix">location_city</i>
+                      <input id="city_to" type="text" class="validate" />
+                      <label for="city_to">City</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12 m6">
+                      <i class="material-icons prefix">map</i>
+                      <input id="state_to" type="text" class="validate" />
+                      <label for="state_to">State</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                      <i class="material-icons prefix">room</i>
+                      <input id="zip_to" type="text" class="validate" required />
+                      <label for="zip_to">Zip *</label>
+                    </div>
+                  </div>
+                  <div class="form_section">Additional Comments:</div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">comment</i>
+                      <input id="comment" type="text" />
+                      <!-- <textarea id="comment" class="materialize-textarea"></textarea> -->
+                      <label for="comment">Items List / Comments (optional)</label>
+                    </div>
+                  </div>
+                  <div style="display:grid; justify-content: center;">
+                    <button class="submit_btn" type="submit" id="form-submit">
+                      SUBMIT
+                    </button>
+                  </div>
+                  <div id="msgSubmit" class="h3 text-center hidden"></div>
+                </form>
+            </div>
           </div>
         </div>
       </div>
@@ -313,8 +325,8 @@
               info@optimusmovers.com
             </p>
           </div>
-          <div class="copyright">Copyright © 2018 All rights reserved.</div>
         </div>
+        <div class="copyright">Copyright © 2018 All rights reserved.</div>
         <div class="skew_box two"></div>
       </div>
     </div>
